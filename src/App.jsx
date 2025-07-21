@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/contexts/theme-context";
 import Layout from "@/routes/layout";
 import DashboardPage from "@/routes/dashboard/page";
 import SalesPage from "@/routes/sales/page";
+import InvoicesPage from "@/routes/invoices/page";
+
 
 function App() {
     const router = createBrowserRouter([
@@ -22,8 +24,9 @@ function App() {
                 },
                 {
                     path: "invoices",
-                    element: <h1 className="title">Invoice</h1>,
+                    element: <InvoicesPage />,
                 },
+
                 {
                     path: "customers",
                     element: <h1 className="title">Customers</h1>,
