@@ -5,7 +5,10 @@ import { ThemeProvider } from "@/contexts/theme-context";
 import Layout from "@/routes/layout";
 import DashboardPage from "@/routes/dashboard/page";
 import SalesPage from "@/routes/sales/page";
-import InvoicesPage from "@/routes/invoices/page";
+import InvoiceForm from "@/routes/invoices/InvoiceForm";
+import CustomerInfo from "@/routes/customer/page";
+import Creditors from "@/routes/customer/creditors";
+
 
 
 function App() {
@@ -24,16 +27,16 @@ function App() {
                 },
                 {
                     path: "invoices",
-                    element: <InvoicesPage />,
+                    element: <InvoiceForm />,
                 },
 
                 {
                     path: "customers",
-                    element: <h1 className="title">Customers</h1>,
+                    element: <CustomerInfo/>,
                 },
                 {
-                    path: "new-customer",
-                    element: <h1 className="title">New Customer</h1>,
+                   path: "creditors",
+                    element: <Creditors />,
                 },
                 {
                     path: "verified-customers",

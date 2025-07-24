@@ -33,9 +33,9 @@ export const navbarLinks = [
                 path: "/customers",
             },
             {
-                label: "New customer",
+                label: "Creditors",
                 icon: UserPlus,
-                path: "/new-customer",
+                path: "/creditors",
             },
             {
                 label: "Verified customers",

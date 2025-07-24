@@ -11,6 +11,8 @@ const SalesPage = () => {
     basePrice: 0,
     discount: 0,
     gstPercentage: 1,
+    quantity: 1,
+
   });
 
   const handleInputChange = (e) => {
@@ -45,6 +47,8 @@ const SalesPage = () => {
           basePrice: 0,
           discount: 0,
           gstPercentage: 1,
+          quantity: 1,
+
         });
       } else {
         alert('Failed to add sale');
@@ -143,6 +147,19 @@ const SalesPage = () => {
                 ))}
               </select>
             </div>
+            <div>
+              <label className="block text-sm font-medium text-slate-700 dark:text-slate-300">Quantity</label>
+              <input
+                type="number"
+                name="quantity"
+                value={formData.quantity}
+                onChange={handleInputChange}
+                min="1"
+                className={cn("mt-1 block w-full rounded-md border p-2")}
+                placeholder="Enter quantity"
+              />
+            </div>
+
           </div>
 
           <div className="mt-6">
