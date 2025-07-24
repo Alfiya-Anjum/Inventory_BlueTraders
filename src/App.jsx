@@ -10,7 +10,7 @@ import CustomerInfo from "@/routes/customer/page";
 import Creditors from "@/routes/customer/creditors";
 
 
-
+//for tthe app pages
 function App() {
     const router = createBrowserRouter([
         {
